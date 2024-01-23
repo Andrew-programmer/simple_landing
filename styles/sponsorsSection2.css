@@ -1,0 +1,62 @@
+.sponsorsSection2 {
+    background-image: url("../static/hero-banner.png.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsorsSection2__sponsorsTable {
+    display: grid;
+    padding-top: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.sponsorsSection2__sponsorsTable__sponsorContainer {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.sponsorsSection2__sponsorsTable__sponsorContainer:hover > .sponsorsSection2__sponsorsTable__sponsorContainer__backdrop {
+    display: flex;
+    cursor: pointer;
+    animation: backdrop2Appear 0.4s ease;
+}
+
+.sponsorsSection2__sponsorsTable__sponsorContainer__backdrop {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.sponsorsSection2__sponsorsTable__sponsorContainer__backdrop__plusIcon {
+    display: flex;
+    padding: 1.5rem 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    align-items: center;
+    opacity: 0.7;
+    justify-content: center;
+    background-color: #ea0763;
+    color: white
+}
+
+@keyframes backdrop2Appear {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

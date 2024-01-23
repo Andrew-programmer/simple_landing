@@ -1,0 +1,114 @@
+.scheduleSection {
+    padding: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scheduleSection__heading {
+    margin-bottom: 5rem;
+}
+
+.scheduleSection__dayList__day {
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    height: 6rem;
+    background: #f7f7f7;
+    transition: .2s ease;
+}
+
+.scheduleSection__dayList__day__clicked{
+    background-color: #3b1d82;
+    color: white;
+}
+
+.scheduleSection__dayList:hover {
+    cursor: pointer;
+}
+
+.scheduleSection__dayList {
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+    transition: 0.5s linear;
+}
+
+.scheduleSection__dayList__day__header {
+    font-weight: bold;
+}
+
+.conferenceAuthors {
+    display: flex;
+    flex-direction: column;
+    animation: linear 0.5s sectionAppear;
+}
+
+.conferenceAuthors__author__container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.conferenceAuthors__author__container:hover > .conferenceAuthors__author__container__imgSection {
+    background-color: #ea0763;
+}
+
+.conferenceAuthors__author__container__imgSection {
+    background: #3b1d82;
+    padding: 3rem 3rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.conferenceAuthors__author__container__imgSection__header {
+    font-weight: bold;
+}
+
+.conferenceAuthors__author__container__description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    color: black;
+    padding: 3rem;
+    width: 50%;
+}
+
+.conferenceAuthors__author__container__description__subheader {
+    font-size: 0.8rem;
+}
+
+.conferenceAuthors__author__container__description__header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.conferenceAuthors__hidden {
+    display: none;
+}
+
+@keyframes sectionAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

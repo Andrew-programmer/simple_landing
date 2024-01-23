@@ -1,0 +1,116 @@
+.priceSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    background-color: #f5f5f5;
+}
+.priceSection__priceListSection {
+    margin-top: 5rem;
+}
+
+
+.priceSection__priceListSection__priceList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.priceSection__priceListSection__priceList__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*width: 25%;*/
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+.priceSection__priceListSection__priceList__item__headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 3rem;
+    height: 5rem;
+}
+
+.priceSection__priceListSection__priceList__item__headerContainer__header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.priceSection__priceListSection__priceList__item__headerContainer__subheader {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #797979;
+}
+
+.priceSection__priceListSection__priceList__item__price {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.priceSection__priceListSection__priceList__item__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    height: 12rem;
+    margin: 3rem;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.priceSection__priceListSection__priceList__item__list__item {
+    color: #797979;
+}
+
+.priceSection__priceListSection__priceList__item__list__item__rejectIcon {
+    color: red;
+}
+
+.priceSection__priceListSection__priceList__item__buyButton {
+    background-color: #f7f7f7;
+    color: black;
+    border-color: #eeeeee;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.priceSection__priceListSection__priceList__item:hover {
+    background-color: #3b1d82;
+    color: white;
+
+}
+
+.priceSection__priceListSection__priceList__item:hover .priceSection__priceListSection__priceList__item__list__item {
+    color: white
+}
+
+.priceSection__priceListSection__priceList__item:hover .priceSection__priceListSection__priceList__item__headerContainer__subheader {
+    color: white;
+}
+
+.priceSection__priceListSection__priceList__item:hover .priceSection__priceListSection__priceList__item__buyButton {
+    background-color: #ea0763;
+    border-color: #ea0763;
+    color: white;
+
+}

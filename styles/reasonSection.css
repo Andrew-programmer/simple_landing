@@ -1,0 +1,96 @@
+.reasonSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reasonSection__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5rem 0 5rem 0;
+    width: 73.5rem;
+    overflow: hidden;
+}
+
+.reasonSection__reasonListSection {
+    display: flex;
+    transition: 0.7s ease;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform: translateX(600px);
+}
+
+.reasonSection__reasonListSection__reasonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 0.5rem;
+    width: min-content;
+    background-color: #f7f7f7;
+    transition: 0.2s ease;
+    margin: 1rem;
+}
+
+
+.reasonSection__reasonListSection__reasonContainer__img {
+    margin-bottom: 2rem;
+}
+
+.reasonSection__reasonListSection__reasonContainer__header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.reasonSection__reasonListSection__reasonContainer__subheaderContainer__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.reasonSection__reasonListSection__reasonContainer__subheaderContainer__list__item {
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.reasonSection__reasonListSection__reasonContainer:hover {
+    background-color: #3b1d82;
+    color: white;
+}
+
+.reasonSection__container__navigationContainer {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    width: 3%;
+}
+
+.reasonSection__container__navigationContainer__navButton {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.2s ease;
+    width: 1rem;
+}
+
+.reasonSection__container__navigationContainer__navButton:hover {
+    cursor: pointer;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+}
+
+.ri-arrow-left-s-line, .ri-arrow-right-s-line {
+    font-size: 1.5rem;
+    color: rgb(49, 49, 49);
+}
+
+.reasonSection__container__navigationContainer__navButton--disabled {
+    opacity: 0.5;
+}

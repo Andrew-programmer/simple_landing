@@ -1,0 +1,77 @@
+.footerSection__container {
+    background-color: rgb(17, 20, 41);
+    /*height: 15rem;*/
+    padding: 5rem;
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+}
+
+.footerSection__container__infoArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 15rem;
+    height: 10rem;
+}
+
+.footerSection__container__infoArticle__header {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footerSection__container__infoArticle__description {
+    opacity: 0.35;
+    font-size: 0.8rem;
+}
+
+.footerSection__container__infoArticle__description__navigationList {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footerSection__container__infoArticle__description__navigationList__item {
+    margin-top: 1rem;
+}
+
+.footerSection__container__infoArticle__description__navigationList__item__link {
+    transition: 0.2s ease;
+    cursor: pointer;
+    color: white;
+}
+
+.footerSection__container__infoArticle__description__navigationList__item__link:hover {
+    color: #dc005c;
+}
+
+.footerSection__container__infoArticle__contactForm__input {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+}
+
+.footerSection__container__infoArticle__contactForm__submitButton {
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    background-color: #ea0763;
+    cursor: pointer;
+}
+
+#gallery-description {
+    opacity: 1;
+}
+
+.footerSection__container__infoArticle__description__gallery {
+    gap: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 16rem;
+}

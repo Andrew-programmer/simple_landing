@@ -1,0 +1,152 @@
+.speakersSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-image: url("../static/speaker-bg.png.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 0;
+    position: relative;
+}
+
+.speakersSection__heading__subheader, .speakersSection__heading__header{
+    color: white;
+}
+
+.speakersSection__speakersList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 5rem;
+}
+
+
+.speakersSection__speakersList__speakerContainer {
+    width: 22rem;
+    height: 25rem;
+    background: lightblue;
+    border: 10px solid white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.speakersSection__speakersList__speakerContainer__description {
+    transition: 0.3s ease;
+    align-self: end;
+    background-color: rgba(59,29,130,0.9);
+    width: 100%;
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+
+.speakersSection__speakersList__speakerContainer:hover > .speakersSection__speakersList__speakerContainer__description {
+    background-color: rgba(234,7,99,0.6);
+}
+
+.speakersSection__speakersList__speakerContainer:hover > .speakersSection__speakersList__speakerContainer__backdrop {
+    display: flex;
+    animation: backdropAppear 0.7s alternate;
+}
+
+.speakersSection__speakersList__speakerContainer__description__header {
+    font-weight: bold;
+}
+
+.speakersSection__speakersList__speakerContainer {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.speakersSection__speakersList__speakerContainer#speaker1{
+    background-image: url("../static/speaker-1.png.webp");
+}
+
+.speakersSection__speakersList__speakerContainer#speaker2{
+    background-image: url("../static/speaker-2.png.webp");
+}
+
+.speakersSection__speakersList__speakerContainer#speaker3{
+    background-image: url("../static/speaker-3.png.webp");
+}
+
+.speakersSection__speakersList__speakerContainer#speaker4{
+    background-image: url("../static/speaker-1.png.webp");
+}
+
+.speakersSection__speakersList__speakerContainer#speaker5{
+    background-image: url("../static/speaker-2.png.webp");
+}
+
+.speakersSection__speakersList__speakerContainer#speaker6{
+    background-image: url("../static/speaker-3.png.webp");
+}
+
+.speakersSection__speakersList__speakerContainer__backdrop {
+    background-color: rgba(59,29,130,0.8);
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    transition: 0.7s;
+}
+
+.speakersSection__speakersList__speakerContainer__backdrop   {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: stretch;
+}
+
+.speakersSection__speakersList__speakerContainer__backdrop__iconsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    z-index: 10;
+}
+
+.speakersSection__speakersList__speakerContainer__backdrop__iconsList > li {
+    border-left: 1px solid #ea0763;
+    border-right: 1px solid #ea0763;
+    text-align: center;
+    padding: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.speakersSection__speakersList__speakerContainer__backdrop__iconsList__icon:hover {
+    cursor: pointer;
+    transition: 0.1s ease;
+    color: white;
+}
+
+.speakersSection__speakersList__speakerContainer__backdrop__hidden {
+    display: none;
+}
+
+@keyframes backdropAppear {
+    from {
+        opacity: 0;
+        margin-top: -70px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}

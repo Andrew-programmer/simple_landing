@@ -1,0 +1,91 @@
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 25rem;
+    padding: 3rem 19rem;
+    background-color: #f7f7f7;
+}
+
+.description__textContainer{
+    display: flex;
+    flex-direction: column;
+    color: #797979;
+    width: 50%;
+    height: 50%;
+}
+
+.description__textContainer *{
+    padding: .6rem;
+}
+
+.description__textContainer__1title{
+    font-size: 1.5rem;
+    color: #3b1d82;
+    font-weight: bold;
+}
+
+.description__textContainer__2title{
+    font-size: 1.2rem;
+    color: #ea0763;
+    font-weight: bold;
+}
+
+.description__listContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 75%;
+}
+
+.description__listContainer__list{
+    display: flex;
+    height: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.description__listContainer__list__item{
+    color: #797979;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 8rem;
+    height: 9rem;
+    margin: 0.5rem;
+}
+
+.description__listContainer__list__item__header{
+    font-size: 1.5rem;
+    color: #3b1d82;
+    font-weight: bold;
+}
+
+.description__listContainer__header{
+    font-size: 1.2rem;
+    color: #ea0763;
+    font-weight: bold;
+}
+
+.description__listContainer__list__item--days{
+    background-image: url("../static/countdown-day.png.webp");
+}
+.description__listContainer__list__item--hours{
+    background-image: url("../static/countdown-hour.png.webp");
+}
+.description__listContainer__list__item--mins{
+    background-image: url("../static/countdown-minute.png.webp");
+}
+
+.description__listContainer__ticketLink{
+    margin-top: 1rem;
+}

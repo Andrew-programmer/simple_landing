@@ -1,0 +1,103 @@
+.featureSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.featureSection__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+.featureSection__heading__subheader {
+    font-size: .9rem;
+    color: #797979
+}
+
+.featureSection__heading__header {
+    font-size: 2rem;
+    color: #3b1d82;
+    font-weight: bold;
+}
+
+.featureSection__featureList {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    margin-top: 8rem;
+    justify-content: space-evenly;
+}
+
+.featureSection__featureList__featureList__item__iconContainer {
+    background-image: url(../static/feature-icon-bg.png.webp);
+    transition: 0.2s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    font-size: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureSection__featureList > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 17%;
+    height: 14rem;
+    text-align: center;
+}
+
+.featureSection__featureList > li:hover > .featureSection__featureList__featureList__item__iconContainer{
+    background-image: url(../static/feature-icon-active-bg.png.webp);
+}
+
+.featureSection__featureList > li:hover > .featureSection__featureList__featureList__item__iconContainer > i{
+    color: white;
+}
+
+
+.featureSection__featureList__featureList__item__header{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.featureSection__featureList__featureList__item__description{
+    font-weight: 200;
+    color: #797979;
+}
+
+.featureSection__buttonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 22%;
+    margin-top: 4rem;
+}
+
+.featureSection__buttonGroup > button {
+    transition: 0.1s linear;
+    background: transparent;
+    outline: 1px solid #3b1d82;
+    color: black;
+    font-weight: bold;
+    padding: 1.2rem 3.2rem;
+    border-radius: 5px;
+}
+
+.featureSection__buttonGroup > button:hover{
+    background: #3b1d82;
+    color: white;
+    cursor: pointer;
+}

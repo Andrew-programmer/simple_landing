@@ -1,0 +1,66 @@
+.sponsorsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../static/sponsor-bg.png.webp");
+}
+
+.sponsorsSection__goldSponsors, .sponsorsSection__silverSponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.sponsorsSection__goldSponsors__sponsorsContainer, .sponsorsSection__silverSponsors__sponsorsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: 3rem 0;
+}
+
+.sponsorsSection__silverSponsors__sponsorContainer__item__img {
+    width: 9rem;
+}
+
+.sponsorsSection__silverSponsors__sponsorContainer__item__img#sponsor2{
+    width: 5rem;
+}
+
+.sponsorsSection__heading {
+    margin-top: 5rem;
+}
+
+.sponsorsSection__header {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 5rem;
+}
+
+.sponsorItem__container {
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.sponsorsSection__goldSponsors__sponsorContainer__item {
+    height: 9rem;
+    width: 18rem;
+}
+
+.sponsorsSection__silverSponsors__sponsorContainer__item {
+    height: 7rem;
+    width: 15rem;
+}
+
+.sponsorItem__container:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.2);
+}
+
