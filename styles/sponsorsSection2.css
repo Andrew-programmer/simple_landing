@@ -50,6 +50,12 @@
     color: white
 }
 
+@media screen and (max-width: 768px) {
+    .sponsorsSection2__sponsorsTable {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @keyframes backdrop2Appear {
     from {
         opacity: 0;

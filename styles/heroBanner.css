@@ -10,6 +10,10 @@
     background-size: cover;
 }
 
+.heroBanner__title__icon__i {
+    font-size: 3rem;
+}
+
 .heroBanner__title{
     display: flex;
     height: 50%;
@@ -30,6 +34,7 @@
 .heroBanner__title__name{
     font-size: 3.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .heroBanner__title__button{

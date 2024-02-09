@@ -11,13 +11,20 @@
     align-items: baseline;
 }
 
+.footerContainer {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+
 .footerSection__container__infoArticle {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    width: 15rem;
-    height: 10rem;
+    width: 16rem;
+    margin-top: 2rem;
+    height: max-content;
 }
 
 .footerSection__container__infoArticle__header {
@@ -73,5 +80,18 @@
     gap: 0.3rem;
     display: flex;
     flex-wrap: wrap;
-    width: 16rem;
+    width: 16em;
+}
+
+@media screen and (max-width: 991px) {
+    .footerSection__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .footerSection__container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }

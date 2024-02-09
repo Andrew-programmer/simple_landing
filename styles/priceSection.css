@@ -13,6 +13,7 @@
 
 .priceSection__priceListSection__priceList {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
@@ -26,10 +27,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*width: 25%;*/
     padding: 2rem 3rem;
     border-radius: 5px;
-    margin: 0 1rem;
+    margin: 1rem;
     color: black;
     background-color: white;
     transition: 0.3s ease;
@@ -112,5 +112,10 @@
     background-color: #ea0763;
     border-color: #ea0763;
     color: white;
+}
 
+@media screen and (max-width: 1199px) {
+    /*.priceSection__priceListSection__priceList__item{*/
+    /*    padding: 2rem 0;*/
+    /*}*/
 }

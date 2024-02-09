@@ -9,7 +9,11 @@
 </head>
 <body>
 <header class="header">
-    <img src="static/logo.png.webp" alt="Logo" class="header__logo">
+    <div class="headerContainer">
+        <img src="static/logo.png.webp" alt="Logo" class="header__logo">
+        <i class="ri-menu-line"></i>
+
+    </div>
     <section class="header__links">
         <a href="#" class="header__links__link header__links__link__active">Home</a>
         <a href="#" class="header__links__link">About</a>
@@ -19,11 +23,19 @@
         <a href="#" class="header__links__link">Contact</a>
     </section>
     <a href="#" class="header__ticket-link">GET TICKET</a>
+    <nav class="header__links-mobile">
+        <a href="#" class="header__links__link header__links__link__active">Home</a>
+        <a href="#" class="header__links__link">About</a>
+        <a href="#" class="header__links__link">Speakers</a>
+        <a href="#" class="header__links__link">Pages</a>
+        <a href="#" class="header__links__link">Blog</a>
+        <a href="#" class="header__links__link">Contact</a>
+    </nav>
 </header>
 <section class="heroBanner">
     <article class="heroBanner__title">
                 <span class="heroBanner__title__icon">
-                    <i class="ri-mic-line"></i>
+                    <i class="ri-mic-line heroBanner__title__icon__i"></i>
                 </span>
         <p class="heroBanner__title__date">
             20 - 22 January, 2019, Buffelo City
@@ -78,7 +90,7 @@
     <ul class="featureSection__featureList">
         <li class="featureSection__featureList__featureList__item1">
             <div class="featureSection__featureList__featureList__item__iconContainer">
-                <i class="ri-number-1"></i>
+                <i class="ri-number-1 featureSection__featureList__featureList__item__iconContainer__i"></i>
             </div>
             <h1 class="featureSection__featureList__featureList__item__header">Always First Service</h1>
             <p class="featureSection__featureList__featureList__item__description">
@@ -87,7 +99,7 @@
         </li>
         <li class="featureSection__featureList__featureList__item2">
             <div class="featureSection__featureList__featureList__item__iconContainer">
-                <i class="ri-globe-line"></i>
+                <i class="ri-globe-line featureSection__featureList__featureList__item__iconContainer__i"></i>
             </div>
             <h1 class="featureSection__featureList__featureList__item__header">International Business</h1>
             <p class="featureSection__featureList__featureList__item__description">
@@ -96,7 +108,7 @@
         </li>
         <li class="featureSection__featureList__featureList__item3">
             <div class="featureSection__featureList__featureList__item__iconContainer">
-                <i class="ri-mic-line"></i>
+                <i class="ri-mic-line featureSection__featureList__featureList__item__iconContainer__i"></i>
             </div>
             <h1 class="featureSection__featureList__featureList__item__header">World Great Speaker</h1>
             <p class="featureSection__featureList__featureList__item__description">
@@ -855,119 +867,122 @@
         </aside>
     </section>
     <footer class="footerSection__container">
-        <article class="footerSection__container__infoArticle">
-            <h1 class="footerSection__container__infoArticle__header">
-                ABOUT UMEET
-            </h1>
-            <p class="footerSection__container__infoArticle__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, deserunt velit. Aliquid cumque
-                cupiditate debitis ducimus enim, eos est iusto maiores maxime minus nobis quia quos reiciendis sunt
-                voluptatibus voluptatum?
-            </p>
-        </article>
-        <article class="footerSection__container__infoArticle">
-            <h1 class="footerSection__container__infoArticle__header">
-                NAVIGATION LINKS
-            </h1>
-            <div class="footerSection__container__infoArticle__description">
-                <ul class="footerSection__container__infoArticle__description__navigationList">
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Feature
-                        </a>
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Services
-                        </a>
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Team
-                        </a>
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Pricing
-                        </a>
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__navigationList__item">
-                        <a class="footerSection__container__infoArticle__description__navigationList__item__link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <article class="footerSection__container__infoArticle">
-            <h1 class="footerSection__container__infoArticle__header">
-                NEWSLETTER
-            </h1>
-            <p class="footerSection__container__infoArticle__description">
-                For business professionals caught between high OEM price and mediocre print and graphic output.
-            </p>
-            <form class="footerSection__container__infoArticle__contactForm">
-                <input type="email" placeholder="Email Address"
-                       class="footerSection__container__infoArticle__contactForm__input">
-                <button type="submit" class="footerSection__container__infoArticle__contactForm__submitButton">
-                    <i class="ri-send-plane-line"></i>
-                </button>
-            </form>
-        </article>
-        <article class="footerSection__container__infoArticle">
-            <h1 class="footerSection__container__infoArticle__header">
-                INSTAFEED
-            </h1>
-            <div class="footerSection__container__infoArticle__description" id="gallery-description">
-                <ul class="footerSection__container__infoArticle__description__gallery">
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i1.jpg.webp" alt="Instagram first image">
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i2.jpg.webp" alt="Instagram second image">
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i3.jpg.webp" alt="Instagram third image">
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i4.jpg.webp" alt="Instagram fourth image">
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i5.jpg" alt="Instagram five image">
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i6.jpg.webp" alt="Instagram six image">
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i7.jpg.webp" alt="Instagram seven image">
-                    </li>
-                    <li class="footerSection__container__infoArticle__description__gallery__img">
-                        <img src="static/i8.jpg.webp" alt="Instagram eight image">
-                    </li>
-                </ul>
-            </div>
-        </article>
+<!--        <div class="footerContainer">-->
+            <article class="footerSection__container__infoArticle">
+                <h1 class="footerSection__container__infoArticle__header">
+                    ABOUT UMEET
+                </h1>
+                <p class="footerSection__container__infoArticle__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, deserunt velit. Aliquid cumque
+                    cupiditate debitis ducimus enim, eos est iusto maiores maxime minus nobis quia quos reiciendis sunt
+                    voluptatibus voluptatum?
+                </p>
+            </article>
+            <article class="footerSection__container__infoArticle">
+                <h1 class="footerSection__container__infoArticle__header">
+                    NAVIGATION LINKS
+                </h1>
+                <div class="footerSection__container__infoArticle__description">
+                    <ul class="footerSection__container__infoArticle__description__navigationList">
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Feature
+                            </a>
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Team
+                            </a>
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__navigationList__item">
+                            <a class="footerSection__container__infoArticle__description__navigationList__item__link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="footerSection__container__infoArticle">
+                <h1 class="footerSection__container__infoArticle__header">
+                    NEWSLETTER
+                </h1>
+                <p class="footerSection__container__infoArticle__description">
+                    For business professionals caught between high OEM price and mediocre print and graphic output.
+                </p>
+                <form class="footerSection__container__infoArticle__contactForm">
+                    <input type="email" placeholder="Email Address"
+                           class="footerSection__container__infoArticle__contactForm__input">
+                    <button type="submit" class="footerSection__container__infoArticle__contactForm__submitButton">
+                        <i class="ri-send-plane-line"></i>
+                    </button>
+                </form>
+            </article>
+            <article class="footerSection__container__infoArticle">
+                <h1 class="footerSection__container__infoArticle__header">
+                    INSTAFEED
+                </h1>
+                <div class="footerSection__container__infoArticle__description" id="gallery-description">
+                    <ul class="footerSection__container__infoArticle__description__gallery">
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i1.jpg.webp" alt="Instagram first image">
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i2.jpg.webp" alt="Instagram second image">
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i3.jpg.webp" alt="Instagram third image">
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i4.jpg.webp" alt="Instagram fourth image">
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i5.jpg" alt="Instagram five image">
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i6.jpg.webp" alt="Instagram six image">
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i7.jpg.webp" alt="Instagram seven image">
+                        </li>
+                        <li class="footerSection__container__infoArticle__description__gallery__img">
+                            <img src="static/i8.jpg.webp" alt="Instagram eight image">
+                        </li>
+                    </ul>
+                </div>
+            </article>
+<!--        </div>-->
     </footer>
 </section>
 
 
 <script src="script/conferenceAuthorsMenu.js"></script>
 <script src="script/carousel.js"></script>
+<script src="script/header.js"></script>
 
 </body>
 </html>

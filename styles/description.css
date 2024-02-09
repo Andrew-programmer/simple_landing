@@ -4,8 +4,8 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    height: 25rem;
-    padding: 3rem 19rem;
+    height: min-content;
+    padding: 3rem 9rem;
     background-color: #f7f7f7;
 }
 
@@ -36,7 +36,7 @@
 .description__listContainer{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    /*width: 60%;*/
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -45,7 +45,9 @@
 
 .description__listContainer__list{
     display: flex;
-    height: 80%;
+    height: min-content;
+    width: 86%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -74,6 +76,7 @@
     font-size: 1.2rem;
     color: #ea0763;
     font-weight: bold;
+    text-align: center;
 }
 
 .description__listContainer__list__item--days{
@@ -88,4 +91,34 @@
 
 .description__listContainer__ticketLink{
     margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 991px) {
+    .description {
+        flex-direction: column;
+    }
+    .description__listContainer__list{
+        flex-wrap: nowrap;
+        width: max-content;
+    }
+
+    .description__textContainer {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        padding: 3rem 3rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .description__listContainer__list {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
 }

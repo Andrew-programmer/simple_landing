@@ -94,3 +94,70 @@
 .reasonSection__container__navigationContainer__navButton--disabled {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 1199px) {
+    .reasonSection__container{
+        width: 42.5rem;
+    }
+
+    .reasonSection__reasonListSection{
+        transform: translateX(350px);
+    }
+    .reasonSection__reasonListSection__reasonContainer__img {
+        width: 100%;
+    }
+
+    .reasonSection__reasonListSection__reasonContainer{
+        width: 20rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .reasonSection__reasonListSection__reasonContainer {
+        width: 40rem;
+    }
+    .reasonSection__reasonListSection{
+        transform: translateX(1015px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reasonSection__container {
+        width: 41rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .reasonSection__reasonListSection{
+        transform: translateX(905px);
+    }
+
+    .reasonSection__reasonListSection__reasonContainer {
+        width: 35rem;
+    }
+
+    .reasonSection__container {
+        width: 35rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .reasonSection__reasonListSection{
+        transform: translateX(650px);
+    }
+
+    .reasonSection__reasonListSection__reasonContainer {
+        width: 25rem;
+    }
+
+    .reasonSection__container {
+        width: 25rem;
+    }
+}
+
+/*@media screen and (max-width: 835px) {*/
+/*    .reasonSection__reasonListSection {*/
+/*        transform: translateX(915px);*/
+/*    }*/
+/*}*/

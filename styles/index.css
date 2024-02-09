@@ -18,6 +18,7 @@
     border: none;
     outline: none;
     background-color: transparent;
+    font-size: 1rem;
 }
 
 body{
@@ -30,10 +31,16 @@ a{
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-size: 1rem;
     font-weight: normal;
 }
 
 ul,ol{
     list-style-type: none;
 }
+
+@media screen and (max-width: 425px) {
+    * {
+        font-size: 4vw;
+    }
+}
+

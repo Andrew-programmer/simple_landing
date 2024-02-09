@@ -10,6 +10,7 @@
 }
 
 .scheduleSection__dayList__day {
+    margin-top: 1rem;
     font-weight: bold;
     color: black;
     display: flex;
@@ -33,11 +34,13 @@
 
 .scheduleSection__dayList {
     display: flex;
-    width: 35%;
+    width: 98%;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 5rem;
     transition: 0.5s linear;
+    flex-wrap: wrap;
+    max-width: 45rem;
 }
 
 .scheduleSection__dayList__day__header {
@@ -99,6 +102,50 @@
 
 .conferenceAuthors__hidden {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .conferenceAuthors__author__container__description__subheader {
+        font-size: 0.6rem;
+    }
+
+    .conferenceAuthors__author__container__description__header {
+        font-size: 0.95rem;
+    }
+
+    .conferenceAuthors__author__container__description__text {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .conferenceAuthors{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conferenceAuthors__author__container {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .conferenceAuthors__author__container__description{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .conferenceAuthors__author__container__description__subheader {
+        font-size: 0.8rem;
+    }
+
+    .conferenceAuthors__author__container__description__header {
+        font-size: 1.1rem;
+    }
+
+    .conferenceAuthors__author__container__description__text {
+        font-size: 1rem;
+    }
 }
 
 @keyframes sectionAppear {

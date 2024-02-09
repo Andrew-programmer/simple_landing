@@ -1,13 +1,34 @@
 const carouselList = document.querySelector('.reasonSection__reasonListSection');
 const navButtons = document.querySelectorAll('.reasonSection__container__navigationContainer__navButton');
 const [leftNavButton, rightNavButton] = navButtons;
+const screenWidth = window.screen.width;
 
+const calculateCurrentOffsetByScreen = () => {
+    if (screenWidth <= 991) {
+        return 1015;
+    } else if (screenWidth <= 1199) {
+        return 350;
+    } else {
+        return 600;
+    }
+}
 
-let currentOffset = 600;
+const calculateOffsetBytScreen = () => {
+    if (screenWidth <= 991) {
+        return 675;
+    } else if (screenWidth <= 1199) {
+        return 350;
+    } else {
+        return 600;
+    }
+}
+
+let currentOffset = calculateCurrentOffsetByScreen();
+let maxOffset = calculateCurrentOffsetByScreen();
 
 const setButtonsDisabledStyles = () => {
-    const isLeftDisabled = currentOffset === 600;
-    const isRightDisabled = currentOffset === -600;
+    const isLeftDisabled = currentOffset === maxOffset;
+    const isRightDisabled = currentOffset === -maxOffset;
     leftNavButton.classList.toggle('reasonSection__container__navigationContainer__navButton--disabled', isLeftDisabled);
     rightNavButton.classList.toggle('reasonSection__container__navigationContainer__navButton--disabled', isRightDisabled);
 }
@@ -15,7 +36,7 @@ const setButtonsDisabledStyles = () => {
 
 const calculateTransform = (elem, offset) => {
     const futureOffset = currentOffset + offset;
-    if (futureOffset <= 600 && futureOffset >= -600) {
+    if (futureOffset <= maxOffset && futureOffset >= -maxOffset) {
         currentOffset = futureOffset;
         elem.style.transform = `matrix(1, 0, 0, 1, ${currentOffset}, 0)`;
     }
@@ -28,10 +49,10 @@ const handleNavClick = (event) => {
     const {target} = event;
     switch (target.dataset.direction) {
         case "right":
-            calculateTransform(carouselList, -600);
+            calculateTransform(carouselList, -calculateOffsetBytScreen());
             return;
         case 'left':
-            calculateTransform(carouselList, 600);
+            calculateTransform(carouselList, calculateOffsetBytScreen());
             return;
     }
 

@@ -150,3 +150,22 @@
         margin-top: 0;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .speakersSection__speakersList__speakerContainer {
+        width: 18rem;
+        height: 21rem;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .speakersSection__speakersList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .speakersSection__speakersList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
