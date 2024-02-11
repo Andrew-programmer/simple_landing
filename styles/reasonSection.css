@@ -130,7 +130,7 @@
 
 @media screen and (max-width: 680px) {
     .reasonSection__reasonListSection{
-        transform: translateX(905px);
+        transform: translateX(890px);
     }
 
     .reasonSection__reasonListSection__reasonContainer {
@@ -153,6 +153,12 @@
 
     .reasonSection__container {
         width: 25rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .reasonSection {
+        display: none;
     }
 }
 

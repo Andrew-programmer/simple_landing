@@ -4,7 +4,11 @@ const [leftNavButton, rightNavButton] = navButtons;
 const screenWidth = window.screen.width;
 
 const calculateCurrentOffsetByScreen = () => {
-    if (screenWidth <= 991) {
+    if(screenWidth <= 580) {
+        return 650;
+    } else if(screenWidth <= 680) {
+        return 890;
+    } else if (screenWidth <= 991) {
         return 1015;
     } else if (screenWidth <= 1199) {
         return 350;
@@ -14,7 +18,11 @@ const calculateCurrentOffsetByScreen = () => {
 }
 
 const calculateOffsetBytScreen = () => {
-    if (screenWidth <= 991) {
+    if(screenWidth <= 580) {
+        return 432;
+    } else if(screenWidth <= 680) {
+        return 590;
+    } else if (screenWidth <= 991) {
         return 675;
     } else if (screenWidth <= 1199) {
         return 350;
